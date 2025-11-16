@@ -1,0 +1,6 @@
+[submodule "go-uploader"]
+	path = go-uploader
+	url = https://github.com/firstpersoncode/go-uploader.git
+[submodule "next-uploader"]
+	path = next-uploader
+	url = https://github.com/firstpersoncode/next-uploader.git

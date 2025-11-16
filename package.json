@@ -1,0 +1,42 @@
+{
+  "name": "bank-statement-app",
+  "version": "1.0.0",
+  "description": "A full-stack monorepo for bank statement analysis",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd go-uploader && go run main.go",
+    "dev:frontend": "cd next-uploader && npm run dev",
+    "build:backend": "cd go-uploader && go build -o main .",
+    "build:frontend": "cd next-uploader && npm run build",
+    "test:backend": "cd go-uploader && go test ./internal/modules... -v",
+    "test:frontend": "cd next-uploader && npm run lint",
+    "docker:build": "docker compose build",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f",
+    "docker:restart": "docker compose restart",
+    "setup:backend": "cd go-uploader && cp .env.example .env && go mod download",
+    "setup:frontend": "cd next-uploader && cp .env.example .env && npm install",
+    "setup": "npm run setup:backend && npm run setup:frontend",
+    "clean:backend": "cd go-uploader && rm -f main",
+    "clean:frontend": "cd next-uploader && rm -rf .next out node_modules",
+    "clean": "npm run clean:backend && npm run clean:frontend"
+  },
+  "workspaces": [
+    "next-uploader"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firstpersoncode/bank-statement-app"
+  },
+  "keywords": [
+    "bank-statement",
+    "transaction-analysis",
+    "go",
+    "nextjs",
+    "docker",
+    "monorepo"
+  ],
+  "author": "",
+  "license": "ISC"
+}

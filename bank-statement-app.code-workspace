@@ -1,0 +1,30 @@
+{
+  "folders": [
+    {
+      "name": "Root",
+      "path": "."
+    },
+    {
+      "name": "Backend (Go)",
+      "path": "./go-uploader"
+    },
+    {
+      "name": "Frontend (Next.js)",
+      "path": "./next-uploader"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.next": true,
+      "**/out": true,
+      "**/.git": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/.next": true,
+      "**/out": true,
+      "**/build": true
+    }
+  }
+}
