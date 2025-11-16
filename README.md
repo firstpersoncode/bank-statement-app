@@ -247,13 +247,13 @@ kill -9 <PID>
 
 For detailed information about each service:
 
-- **Backend Documentation**: [go-uploader/README.md](./go-uploader/README.md)
+- **Backend Documentation**: [go-uploader/README.md](https://github.com/firstpersoncode/go-uploader/blob/master/README.md)
   - API endpoints and usage
   - Authentication flow
   - Architecture decisions
   - Development setup
 
-- **Frontend Documentation**: [next-uploader/README.md](./next-uploader/README.md)
+- **Frontend Documentation**: [next-uploader/README.md](https://github.com/firstpersoncode/next-uploader/blob/main/README.md)
   - Component architecture
   - State management
   - API integration
